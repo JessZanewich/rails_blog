@@ -1,19 +1,20 @@
-<h2>This is our new for posts</h2>
+<div id="page_wrapper">
+  <h2>New Post</h2>
 
-<!--Rails form_for method-->
-<%= form_for :post, url: posts_path do |f| %>
-  <p>
-    <%= f.label :title %> <br>
-    <%= f.text_field :title %>
-  </p>
+  <!--Rails form_for method-->
+  <%= form_for :post, url: posts_path do |f| %>
+    <p>
+      <%= f.label :title %> <br>
+      <%= f.text_field :title %>
+    </p>
 
-  <p>
-    <%= f.label :body %> <br>
-    <%= f.text_field :body %>
-  </p>
+    <p>
+      <%= f.label :body %> <br>
+      <%= f.text_field :body %>
+    </p>
 
-  <p>
-    <%= f.submit %>
-  </p>
-
-<% end %>
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>
